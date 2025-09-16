@@ -1,0 +1,17 @@
+
+  {
+    "default_source_repo": "/Users/jejohnson/Documents/Apps/salesforce-connector-app-desk",
+    "default_target_repo": "/Users/jejohnson/Documents/Apps/azure-connector-app-desk",
+    "base_branch": "main",
+    "migration_mode": "commit_to_local", 
+    "source": {
+      "type": "commit", 
+      "branch": "security-issue-2",
+      "commit": "71fdabb887266da95af94c7a263fec85faa346ac"
+    },
+    "target": {
+      "type": "local",
+      "branch": "security-issue"
+    }
+  }
+  

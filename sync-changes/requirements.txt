@@ -1,0 +1,29 @@
+
+// config format:
+{
+  "migration_mode": "local_to_local",
+  "source": { "type": "local", "branch": "feature-xyz" },
+  "target": { "type": "local", "branch": "feature-xyz" }
+}
+
+{
+  "migration_mode": "commit_to_local",
+  "source": {
+    "type": "commit",
+    "branch": "feature-xyz",
+    "commit": "abc123def456"
+  },
+  "target": {
+    "type": "local",
+    "branch": "feature-xyz"
+  }
+}
+
+{
+  "migration_mode": "branch_to_branch",
+  "source": { "type": "branch", "branch": "feature-xyz" },
+  "target": { "type": "branch", "branch": "feature-xyz" }
+}
+
+// run command
+python sync-chages/migrate_changes.py
